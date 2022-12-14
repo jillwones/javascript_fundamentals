@@ -36,7 +36,7 @@ class Weather {
     rl.question(
       "\nWhat city would you like to see the weather for? Type done when you would like to exit the program\n",
       (input) => {
-        this.fetch(input).then((weather) => {
+        this.fetch(input).then(() => {
           if (input === "done") {
             rl.close();
           } else {
